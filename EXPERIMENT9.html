@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment09</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        h1{
+            background-color: black;
+            color:white;
+            text-align: center;
+            width: 100%;
+        }
+        .box1, .box2, .box3, .box4{
+            border: 5px solid black;
+            
+            margin: 20px;
+            padding: 10px;      
+        }
+        #tshirt{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+     </style>   
+</head>
+<body>
+    <h1>responsive product grid</h1>
+    <div class="container">
+     <div class="box1">
+       <center> <img src="tshirt.webp" alt="Shop Logo"  height="250px"><br>
+        <p id="tshirt">Classic Cotton T Shirt</p>
+        <p>Soft Breathable Fabric</p>
+        <p>Rs.899 <strike>999</strike></p>
+        <button>Add To Cart</button></center>
+     </div>
+     <div class="box2">
+        <center> <img src="tshirt2.webp" alt="Shop Logo"  height="250px"><br>
+        <p id="tshirt">Classic Cotton T Shirt</p>
+        <p>Soft Breathable Fabric</p>
+        <p>Rs.399 <strike>599</strike></p>
+        <button>Add To Cart</button></center>
+     </div>
+     <div class="box3">
+        <center> <img src="tshirt 3.webp" alt="Shop Logo"  height="250px"><br>
+        <p id="tshirt">Classic Cotton T Shirt</p>
+        <p>Soft Breathable Fabric</p>
+        <p>Rs.499 <strike>699</strike></p>
+        <button>Add To Cart</button></center>
+     </div>
+     <div class="box4">
+        <center> <img src="tshirt4.jpg" alt="Shop Logo"  height="250px"><br>
+        <p id="tshirt">Classic Cotton T Shirt</p>
+        <p>Soft Breathable Fabric</p>
+        <p>Rs.459 <strike>599</strike></p>
+        <button>Add To Cart</button></center>
+     </div>
+    </div>
+</body>
+</html>
